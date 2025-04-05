@@ -1,0 +1,25 @@
+#
+# This file is part of DKWG-Events.
+#
+# Copyright (C) 2025 GEO Data and Knowledge Working group members.
+#
+# DKWG-Events is free software; you can redistribute it and/or modify it
+# under the terms of the MIT License; see LICENSE file for more details.
+#
+
+#
+# Notifications - VAPID public key
+#
+NEXT_PUBLIC_VAPID_PUBLIC_KEY=BBtnuV50t04KRBX78tBog-L8rQj7Hx6nvm6gRkHUMaUD0_k7oR-gIVMv7XnXkSksl-bFdGMz8yicnJs6X0VoHfM
+
+
+#
+# Notifications - VAPID private key
+#
+VAPID_PRIVATE_KEY=shg9pIHzolUcELSlFf9TxvcViXhdRa7sodaGhHzDw4o
+
+
+#
+# Storage - Database content
+#
+DATABASE_URL=""
