@@ -1,21 +1,37 @@
 /**
  * This file is part of DKWG-Events.
- * 
+ *
  * Copyright (C) 2025 GEO Data and Knowledge Working group members.
- * 
+ *
  * DKWG-Events is free software; you can redistribute it and/or modify it
  * under the terms of the MIT License; see LICENSE file for more details.
  */
 
-export default function Home() {
+import { EventHero, ScheduleSection } from '../components';
+
+import { ODOKSchedule } from '@db/schedule';
+
+export default function ODOKHomePage() {
   return (
-    <div className="grid min-h-screen grid-rows-[20px_1fr_20px] items-center justify-items-center gap-16 p-8 pb-20 font-[family-name:var(--font-geist-sans)] sm:p-20">
-      <main className="row-start-2 flex flex-col items-center gap-[32px] sm:items-start">
-        GEO DKWG events agenda
-      </main>
-      <footer className="row-start-3 flex flex-wrap items-center justify-center gap-[24px]">
-        Application footer
-      </footer>
-    </div>
+    <>
+      <EventHero
+        label={'GEO Global Forum - Auditorium'}
+        title={'Open Data and Open Knowledge Workshop 2025'}
+        description={
+          'Dive into hands-on experiences, cutting-edge technology demos, and engaging live sessions.'
+        }
+      />
+
+      <div id="schedule" className="mt-5">
+        <ScheduleSection
+          id={'day-01'}
+          data={ODOKSchedule}
+          title={'Monday, 26 September'}
+          description={
+            'From 14:00 to 18:00 — 4 hours of nonstop innovation, demos, and discussion.'
+          }
+        />
+      </div>
+    </>
   );
 }
