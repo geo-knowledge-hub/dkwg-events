@@ -70,7 +70,7 @@ export const EventHero: React.FC<EventHeroProps> = ({
               href="/booth"
               className="inline-flex items-center rounded-lg bg-[#459299] px-5 py-2.5 font-medium text-white shadow transition hover:bg-[#36777c] focus:ring-2 focus:ring-[#459299] focus:ring-offset-2 focus:outline-none"
             >
-              Explore booth
+              Explore the booth
             </Link>
           )}
 
@@ -79,7 +79,7 @@ export const EventHero: React.FC<EventHeroProps> = ({
               href="/"
               className="inline-flex items-center rounded-lg bg-[#459299] px-5 py-2.5 font-medium text-white shadow transition hover:bg-[#36777c] focus:ring-2 focus:ring-[#459299] focus:ring-offset-2 focus:outline-none"
             >
-              Explore ODOK 2025
+              Explore ODOK
             </Link>
           )}
         </div>
