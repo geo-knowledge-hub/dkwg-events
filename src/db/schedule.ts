@@ -16,7 +16,7 @@ export const ODOKSchedule = [
     author: 'Kalamkas Yessimkhanova and Sam Amos',
     organization: 'GEO Secretariat',
     time: '14:00 - 14:05',
-    type: 'Talk',
+    type: 'Presentation',
   },
   {
     topic: 'ODOK and Youth',
@@ -24,7 +24,7 @@ export const ODOKSchedule = [
     author: 'TBC',
     organization: 'TBC',
     time: '14:05 - 14:12',
-    type: 'Talk',
+    type: 'Presentation',
   },
   {
     topic: 'ODOK and Youth',
@@ -32,7 +32,7 @@ export const ODOKSchedule = [
     author: 'Tom Hengl',
     organization: 'Open Geo Hub',
     time: '14:12 - 14:19',
-    type: 'Talk',
+    type: 'Presentation',
   },
   {
     topic: 'ODOK and Youth',
@@ -41,7 +41,7 @@ export const ODOKSchedule = [
     author: 'Yue Huan',
     organization: 'REIS',
     time: '14:19 - 14:26',
-    type: 'Talk',
+    type: 'Presentation',
   },
   {
     topic: 'ODOK and Youth',
@@ -49,7 +49,7 @@ export const ODOKSchedule = [
     author: 'Lamine Ndiaye ',
     organization: 'HOT-OSM',
     time: '14:26 - 14:33',
-    type: 'Talk',
+    type: 'Presentation',
   },
   {
     topic: 'ODOK and Youth',
@@ -65,7 +65,7 @@ export const ODOKSchedule = [
     author: 'Paola de Salvo',
     organization: 'GEO Secretariat',
     time: '14:43 - 14:48',
-    type: 'Talk',
+    type: 'Presentation',
   },
   {
     topic: 'ODOK and National GEOs',
@@ -73,7 +73,7 @@ export const ODOKSchedule = [
     author: 'Felipe Carlos',
     organization: 'GEO Secretariat',
     time: '14:48 - 14:55',
-    type: 'Talk',
+    type: 'Presentation',
   },
   {
     topic: 'ODOK and National GEOs',
@@ -81,7 +81,7 @@ export const ODOKSchedule = [
     author: 'Amos Kabobah',
     organization: 'UENR',
     time: '14:55 - 15:02',
-    type: 'Talk',
+    type: 'Presentation',
   },
   {
     topic: 'ODOK and National GEOs',
@@ -89,7 +89,7 @@ export const ODOKSchedule = [
     author: 'Lulu Makapela',
     organization: 'CSIR',
     time: '15:02 - 15:09',
-    type: 'Talk',
+    type: 'Presentation',
   },
   {
     topic: 'ODOK and National GEOs',
@@ -98,7 +98,7 @@ export const ODOKSchedule = [
     author: 'Lawrence Friedl',
     organization: 'NASA',
     time: '15:16 - 15:23',
-    type: 'Talk',
+    type: 'Presentation',
   },
   {
     topic: 'ODOK and National GEOs',
@@ -113,7 +113,7 @@ export const ODOKSchedule = [
     author: 'Helen Glaves',
     organization: 'BGS',
     time: '15:33 - 15:40',
-    type: 'Talk',
+    type: 'Presentation',
   },
   {
     topic: 'In situ data in GEO',
@@ -121,7 +121,7 @@ export const ODOKSchedule = [
     author: 'Joan Maso',
     organization: 'University of Barcelona',
     time: '15:40 - 15:47',
-    type: 'Talk',
+    type: 'Presentation',
   },
   {
     topic: 'In situ data in GEO',
@@ -130,7 +130,7 @@ export const ODOKSchedule = [
     author: 'Alba Brobia',
     organization: 'CREAF',
     time: '15:47 - 15:54',
-    type: 'Talk',
+    type: 'Presentation',
   },
   {
     topic: 'In situ data in GEO',
@@ -138,7 +138,7 @@ export const ODOKSchedule = [
     author: 'Steffen Fritz',
     organization: 'IIASA',
     time: '15:43 - 16:01',
-    type: 'Talk',
+    type: 'Presentation',
   },
   {
     topic: 'In situ data in GEO',
@@ -146,7 +146,7 @@ export const ODOKSchedule = [
     author: 'Antonio Bombelli',
     organization: 'WMO',
     time: '16:01 - 16:08',
-    type: 'Talk',
+    type: 'Presentation',
   },
   {
     topic: 'In situ data in GEO',
@@ -161,7 +161,7 @@ export const ODOKSchedule = [
     author: 'Bente Lilja Bye',
     organization: 'BLB',
     time: '16:18 - 16:23',
-    type: 'Talk',
+    type: 'Presentation',
   },
   {
     topic: 'ODOK and new GWP activities',
@@ -169,7 +169,7 @@ export const ODOKSchedule = [
     author: 'GEO Knowledge Hub Team',
     organization: 'GEO Data and Knowledge Working Group',
     time: '16:23 - 16:30',
-    type: 'Talk',
+    type: 'Presentation',
   },
   {
     topic: 'ODOK and new GWP activities',
@@ -177,7 +177,7 @@ export const ODOKSchedule = [
     author: 'Lionel Menard',
     organization: 'MinesParis',
     time: '16:30 - 16:37',
-    type: 'Talk',
+    type: 'Presentation',
   },
   {
     topic: 'ODOK and new GWP activities',
@@ -185,7 +185,7 @@ export const ODOKSchedule = [
     author: 'Joan Maso',
     organization: 'University of Geneva',
     time: '16:37 - 16:44',
-    type: 'Talk',
+    type: 'Presentation',
   },
   {
     topic: 'ODOK and new GWP activities',
@@ -193,7 +193,7 @@ export const ODOKSchedule = [
     author: 'Bente Lilja Bye',
     organization: 'BLB',
     time: '16:44 - 16:51',
-    type: 'Talk',
+    type: 'Presentation',
   },
   {
     topic: 'ODOK and new GWP activities',
@@ -201,7 +201,7 @@ export const ODOKSchedule = [
     author: 'Taylor Campbell and Jan Ainali',
     organization: 'Creative Commons',
     time: '16:51 - 16:58',
-    type: 'Talk',
+    type: 'Presentation',
   },
   {
     topic: 'ODOK and new GWP activities',
@@ -209,7 +209,7 @@ export const ODOKSchedule = [
     author: 'Taylor Campbell and Jan Ainali',
     organization: 'Creative Commons',
     time: '16:58 - 17:05',
-    type: 'Talk',
+    type: 'Presentation',
   },
   {
     topic: 'ODOK and new GWP activities',
@@ -217,7 +217,7 @@ export const ODOKSchedule = [
     author: 'Arif Rustem',
     organization: 'UMBC',
     time: '17:05 - 17:12',
-    type: 'Talk',
+    type: 'Presentation',
   },
   {
     topic: 'ODOK and new GWP activities',
@@ -231,7 +231,7 @@ export const ODOKSchedule = [
     title: 'Final remarks and next steps',
     author: 'All speakers',
     time: '17:22 - 17:30',
-    type: 'Talk',
+    type: 'Presentation',
   },
 ];
 
