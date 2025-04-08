@@ -10,6 +10,7 @@
 'use client';
 
 import React, { JSX } from 'react';
+import Link from 'next/link';
 
 /**
  * Properties expected for the ``EventHero`` component.
@@ -18,6 +19,8 @@ interface EventHeroProps {
   label: string;
   title: string;
   description: string;
+  booth: boolean;
+  odok: boolean;
 }
 
 /**
@@ -28,15 +31,19 @@ interface EventHeroProps {
  * @param {string} props.label - Hero main label.
  * @param {string} props.title - Hero title.
  * @param {string} props.description - Hero description.
+ * @param {string} props.booth - Flag indicating if it is to use booth button.
+ * @param {string} props.odok - Flag indicating if it is to use odok button.
  * @returns {JSX.Element} The rendered Header component.
  */
 export const EventHero: React.FC<EventHeroProps> = ({
   label,
   title,
   description,
+  booth,
+  odok,
 }: EventHeroProps): JSX.Element => {
   return (
-    <section className="h-screen bg-gray-100 px-4 py-16 sm:h-auto md:h-auto lg:h-auto">
+    <section className="h-auto bg-gray-100 px-4 py-16">
       <div className="mx-auto max-w-4xl space-y-12 text-center lg:space-y-6">
         {/* Label */}
         <span className="inline-flex items-center rounded-full bg-[#c7e4e6] px-3 py-1 text-sm font-medium text-[#306c70]">
@@ -50,20 +57,32 @@ export const EventHero: React.FC<EventHeroProps> = ({
         <p className="text-lg text-gray-600">{description}</p>
 
         {/* CTA Button - Schedule (Fixed) */}
-        <a
-          href="#schedule"
-          className="inline-flex items-center rounded-lg bg-[#459299] px-5 py-2.5 font-medium text-white shadow transition hover:bg-[#36777c] focus:ring-2 focus:ring-[#459299] focus:ring-offset-2 focus:outline-none"
-        >
-          Schedule
-          <svg className="ml-2 h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path
-              d="M17 8l4 4m0 0l-4 4m4-4H3"
-              strokeWidth="2"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-            />
-          </svg>
-        </a>
+        <div className="flex flex-wrap justify-center gap-2">
+          <Link
+            href="#schedule"
+            className="inline-flex items-center rounded-lg bg-[#459299] px-5 py-2.5 font-medium text-white shadow transition hover:bg-[#36777c] focus:ring-2 focus:ring-[#459299] focus:ring-offset-2 focus:outline-none"
+          >
+            Schedule
+          </Link>
+
+          {booth && (
+            <Link
+              href="/booth"
+              className="inline-flex items-center rounded-lg bg-[#459299] px-5 py-2.5 font-medium text-white shadow transition hover:bg-[#36777c] focus:ring-2 focus:ring-[#459299] focus:ring-offset-2 focus:outline-none"
+            >
+              Explore booth
+            </Link>
+          )}
+
+          {odok && (
+            <Link
+              href="/"
+              className="inline-flex items-center rounded-lg bg-[#459299] px-5 py-2.5 font-medium text-white shadow transition hover:bg-[#36777c] focus:ring-2 focus:ring-[#459299] focus:ring-offset-2 focus:outline-none"
+            >
+              Explore ODOK 2025
+            </Link>
+          )}
+        </div>
       </div>
     </section>
   );

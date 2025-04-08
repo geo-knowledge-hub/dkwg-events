@@ -84,9 +84,9 @@ export const Header: React.FC<HeaderProps> = ({
 
             <button
               onClick={handleNotifyClick}
-              className="rounded-full bg-[#459299] px-5 py-2.5 text-sm font-semibold text-white shadow transition hover:bg-[#36777c] focus:ring-2 focus:ring-[#459299]/50 focus:outline-none"
+              className="cursor-pointer rounded-full bg-[#459299] px-5 py-2.5 text-sm font-semibold text-white shadow transition hover:bg-[#36777c] focus:ring-2 focus:ring-[#459299]/50 focus:outline-none"
             >
-              Get Notifications
+              Get notifications
             </button>
           </nav>
 
@@ -136,9 +136,9 @@ export const Header: React.FC<HeaderProps> = ({
 
             <button
               onClick={handleNotifyClick}
-              className="block w-full rounded-lg bg-[#459299] px-4 py-2.5 text-left text-sm font-semibold text-white shadow transition hover:bg-[#36777c]"
+              className="block w-full cursor-pointer rounded-lg bg-[#459299] px-4 py-2.5 text-left text-sm font-semibold text-white shadow transition hover:bg-[#36777c]"
             >
-              Get Notifications
+              Get notifications
             </button>
           </div>
         )}

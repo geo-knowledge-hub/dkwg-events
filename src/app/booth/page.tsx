@@ -15,48 +15,49 @@ export default function BoothPage() {
   return (
     <>
       <EventHero
-        label={'GEO Global Forum - Booth #25'}
+        label={'GEO Global Forum'}
         title={'GEO Data and Knowledge WG booth'}
         description={
-          'Dive into hands-on experiences, cutting-edge technology demos, and engaging live sessions.'
+          'Explore the power of EO-based applications through live demos, expert insights, and hands-on tech.'
         }
+        booth={false}
+        odok={true}
       />
 
-      <div id="schedule" className="mt-5">
+      <div id="schedule">
         <ScheduleSection
           id={'day-01'}
-          title={'Monday, 26 September'}
-          description={
-            'From 14:00 to 16:00 — 2 hours of nonstop innovation, demos, and discussion.'
-          }
-          data={BoothSchedule}
+          title={BoothSchedule.Day01.title}
+          description={BoothSchedule.Day01.description}
+          data={BoothSchedule.Day01.activities}
         />
 
         <ScheduleSection
           id={'day-02'}
-          title={'Tuesday, 27 September'}
-          description={
-            'From 14:00 to 16:00 — 2 hours of nonstop innovation, demos, and discussion.'
-          }
-          data={BoothSchedule}
+          title={BoothSchedule.Day02.title}
+          description={BoothSchedule.Day02.description}
+          data={BoothSchedule.Day02.activities}
         />
 
         <ScheduleSection
           id={'day-03'}
-          title={'Wednesday, 28 September'}
-          description={
-            'From 14:00 to 16:00 — 2 hours of nonstop innovation, demos, and discussion.'
-          }
-          data={BoothSchedule}
+          title={BoothSchedule.Day03.title}
+          description={BoothSchedule.Day03.description}
+          data={BoothSchedule.Day03.activities}
         />
 
         <ScheduleSection
-          id={'day5-04'}
-          data={BoothSchedule}
-          title={'Thursday, 29 September'}
-          description={
-            'From 14:00 to 16:00 — 2 hours of nonstop innovation, demos, and discussion.'
-          }
+          id={'day-04'}
+          title={BoothSchedule.Day04.title}
+          description={BoothSchedule.Day04.description}
+          data={BoothSchedule.Day04.activities}
+        />
+
+        <ScheduleSection
+          id={'day-05'}
+          title={BoothSchedule.Day05.title}
+          description={BoothSchedule.Day05.description}
+          data={BoothSchedule.Day05.activities}
         />
       </div>
     </>

@@ -17,10 +17,15 @@ import React, { JSX } from 'react';
 type Activity = {
   topic: string;
   title: string;
-  author: string;
-  organization: string;
   time: string;
   type: string;
+  author?: string | undefined;
+  organization?: string | undefined;
+  description?: string | undefined;
+  sponsor?: string | undefined;
+  break?: string | undefined;
+  cta?: boolean | undefined;
+  ctaLink?: string | undefined;
 };
 
 /**
@@ -57,7 +62,7 @@ export const ScheduleSection: React.FC<ScheduleProps> = ({
   }, {});
 
   return (
-    <section id={id} className="bd-white px-4 pt-25">
+    <section id={id} className="px-4 pt-25">
       <div className="mx-auto max-w-4xl">
         {/* Heading */}
         <h2 className="mb-4 text-center text-3xl font-bold">{title}</h2>
@@ -68,23 +73,109 @@ export const ScheduleSection: React.FC<ScheduleProps> = ({
           {Object.entries(grouped).map(([topic, activities]) => (
             <div key={topic} className="mb-12">
               <h3 className="mb-4 text-xl font-semibold">{topic}</h3>
-              <div className="space-y-4">
-                {activities.map((item, index) => (
-                  <div key={index} className="rounded-lg border border-gray-200 p-4 shadow-sm">
-                    <div className="flex items-start justify-between">
-                      <div className="flex-1">
-                        <p className="mb-1 text-sm text-gray-500">{item.time}</p>
-                        <h4 className="text-base font-medium">{item.title}</h4>
-                        <p className="mt-1 text-sm text-gray-600">
-                          <span className="font-medium">{item.author}</span> — {item.organization}
-                        </p>
+              <div className="space-y-5">
+                {activities.map((item, index) => {
+                  const isBreak =
+                    item.type.toLowerCase() === 'coffee break' ||
+                    item.type.toLowerCase() === 'lunch break';
+
+                  if (isBreak) {
+                    const isCoffee = item.type.toLowerCase().includes('coffee');
+                    const icon = isCoffee ? '☕' : '🍽️';
+                    const sponsor = item.sponsor;
+
+                    return (
+                      <div
+                        key={index}
+                        className="rounded-lg border border-[#CFE4E5] bg-[#EAF4F4] p-4 shadow-sm"
+                      >
+                        <div className="flex w-full flex-col flex-wrap items-start justify-between md:flex-row md:items-center lg:flex-row lg:items-center">
+                          {/* Left side: Time and Title */}
+                          <div className="flex-1 space-y-2">
+                            <p className="text-sm text-gray-500">{item.time}</p>
+                            <h4 className="text-base font-medium">
+                              {icon} {item.title}
+                            </h4>
+                          </div>
+
+                          {/* Right side: Sponsor only, centered */}
+                          {sponsor && (
+                            <div className="mt-2 flex items-center text-center text-sm text-gray-500">
+                              Sponsored by {sponsor}
+                            </div>
+                          )}
+                        </div>
                       </div>
-                      <span className="ml-4 rounded-full bg-gray-100 px-2 py-1 text-xs font-medium text-gray-800">
-                        {item.type}
-                      </span>
+                    );
+                  }
+
+                  if (item.cta) {
+                    return (
+                      <div
+                        key={index}
+                        className="flex flex-col items-center justify-between rounded-xl border border-gray-200 bg-white p-6 shadow-sm md:flex-row"
+                      >
+                        {/* Left Side */}
+                        <div className="space-y-3 md:w-full">
+                          {/* <p className="mb-2 text-xs font-semibold tracking-wider text-pink-600 uppercase">
+                            {item.ctaTagline}
+                          </p> */}
+                          <p className="text-sm text-gray-600">{item.time}</p>
+                          <h4 className="text-xl font-bold text-gray-900">{item.title}</h4>
+                          <p className="text-sm text-gray-700">{item.description}</p>
+
+                          <div className="flex justify-end">
+                            {item.ctaLink && (
+                              <a
+                                href={item.ctaLink}
+                                className="inline-block rounded-full bg-[#459299] px-4 py-2 text-sm font-semibold text-white shadow transition hover:bg-[#36777c] focus:ring-2 focus:ring-[#459299]/50 focus:outline-none"
+                              >
+                                View
+                              </a>
+                            )}
+                          </div>
+                        </div>
+
+                        {/* Right Side: CTA logo */}
+                        {/* <div className="mt-6 md:flex lg:flex justify-center md:mt-0 md:w-1/3 hidden">
+                          <Image src={item.ctaLogo} alt="CTA logo" className="w-32" />
+                        </div> */}
+                      </div>
+                    );
+                  }
+
+                  // Regular session block
+                  return (
+                    <div
+                      key={index}
+                      className="rounded-xl border border-gray-200 bg-white p-4 shadow-sm"
+                    >
+                      <div className="xs:flex-row flex flex-col items-start justify-between md:flex-row">
+                        <div className="flex-1 space-y-2">
+                          <p className="text-sm text-gray-500">{item.time}</p>
+                          <h4 className="text-base font-medium">{item.title}</h4>
+                          <p className="text-sm text-gray-600">
+                            <span className="font-medium">{item.author}</span>{' '}
+                            {item?.organization && <>— {item.organization}</>}
+                          </p>
+                        </div>
+
+                        <div className="xs:mt-0 mt-2 space-x-2 md:mt-0">
+                          {/* Label: During break */}
+                          {item.break && (
+                            <span className="rounded bg-gray-100 px-2 py-1 text-xs font-medium text-gray-800">
+                              During {item.break}
+                            </span>
+                          )}
+
+                          <span className="rounded bg-gray-100 px-2 py-1 text-xs font-medium text-gray-800">
+                            {item.type}
+                          </span>
+                        </div>
+                      </div>
                     </div>
-                  </div>
-                ))}
+                  );
+                })}
               </div>
             </div>
           ))}

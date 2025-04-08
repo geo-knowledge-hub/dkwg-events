@@ -18,15 +18,17 @@ export default function ODOKHomePage() {
         label={'GEO Global Forum - Auditorium'}
         title={'Open Data and Open Knowledge Workshop 2025'}
         description={
-          'Dive into hands-on experiences, cutting-edge technology demos, and engaging live sessions.'
+          'Fueling a community-powered movement across the GEO community. Discover how open data and open knowledge are driving collaboration, innovation, and impact.'
         }
+        booth={true}
+        odok={false}
       />
 
       <div id="schedule" className="mt-5">
         <ScheduleSection
           id={'day-01'}
           data={ODOKSchedule}
-          title={'Monday, 26 September'}
+          title={'Monday, 5 May'}
           description={
             'From 14:00 to 18:00 — 4 hours of nonstop innovation, demos, and discussion.'
           }
