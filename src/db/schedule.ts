@@ -509,6 +509,14 @@ export const BoothSchedule = {
       },
       {
         topic: 'Activities',
+        title: 'EOTEC DevNet: Building Regional Communities to Advance Earth Observation Capacity Building for Disaster Risk Reduction',
+        author: 'Martyna Stelmaszczuk-Górska',
+        organization: 'EOTEC DevNet',
+        time: '13:30 - 14:00',
+        type: 'Presentation',
+      },
+      {
+        topic: 'Activities',
         title: 'Space for Climate Observatory projects',
         author: 'Frédéric Bretar and Alexia Freigneaux',
         organization: 'SCO',
