@@ -249,25 +249,25 @@ export const BoothSchedule = {
       },
       {
         topic: 'Activities',
-        title: 'GEO Knowledge Hub',
-        author: 'Felipe Carlos and Paola de Salvo',
-        organization: 'GEO Secretariat',
-        time: '10:30 - 11:00 (during lunch break)',
-        type: 'Interactive demo',
-      },
-      {
-        topic: 'Activities',
         title: 'Data Licensing and Software Licensing',
         author: 'Taylor Campbell and Jan Ainali',
         organization: 'Creative Commons',
-        time: '11:00 - 11:30',
+        time: '10:30 - 11:00 (during coffee break)',
         type: 'Interactive demo',
       },
       {
         topic: 'Activities',
         title: 'Field boundary delineation',
         author: 'Mykola Lavreniuk and Andrii Shelestov',
-        organization: 'Creative Commons',
+        organization: '',
+        time: '11:00 - 11:30',
+        type: 'Interactive demo',
+      },
+      {
+        topic: 'Activities',
+        title: 'Harmonized agronomy in-situ data for crop mapping',
+        author: 'Eliana Li Santi',
+        organization: 'SERCO',
         time: '11:30 - 12:00',
         type: 'Interactive demo',
       },
@@ -277,6 +277,15 @@ export const BoothSchedule = {
         sponsor: 'Italian Space Agency (ASI)',
         time: '12:30 - 14:00',
         type: 'Lunch Break',
+      },
+      {
+        topic: 'Activities',
+        title:
+          'Land Productivity Dynamics at high resolution for SIDS and 30m resolution NDVI time series for 2000-2023',
+        author: 'Cesar Luis Garcia',
+        organization: 'Apacheta / GEO-LDN',
+        time: '12:00 - 12:30 (during lunch break)',
+        type: 'Presentation',
       },
       {
         topic: 'Activities',
@@ -315,14 +324,7 @@ export const BoothSchedule = {
     activities: [
       {
         topic: 'Activities',
-        title: 'Coffee break',
-        sponsor: 'Italian Space Agency (ASI)',
-        time: '9:00 - 9:30',
-        type: 'Coffee break',
-      },
-      {
-        topic: 'Activities',
-        title: 'Learn all about the  Data Sharing and Data Management Principles',
+        title: 'Learn all about the Data Sharing and Data Management Principles',
         author: 'Bente Lilja Bye',
         organization: 'BLB',
         time: '9:00 - 9:30',
@@ -343,6 +345,13 @@ export const BoothSchedule = {
         organization: 'GEO Secretariat',
         time: '10:00 - 10:30',
         type: 'Presentation',
+      },
+      {
+        topic: 'Activities',
+        title: 'Coffee break',
+        sponsor: 'Italian Space Agency (ASI)',
+        time: '10:30 - 11:00',
+        type: 'Coffee break',
       },
       {
         topic: 'Activities',
@@ -374,7 +383,7 @@ export const BoothSchedule = {
         title: 'Space for Climate Observatory projects',
         author: 'Frédéric Bretar and Alexia Freigneaux',
         organization: 'SCO',
-        time: '11:30 - 12:00',
+        time: '12:00 - 12:30',
         type: 'Presentation',
       },
       {
@@ -386,7 +395,7 @@ export const BoothSchedule = {
       },
       {
         topic: 'Activities',
-        title: 'Learn to become a GEO Knowledge Hub provider',
+        title: 'Global Ecosystem Atlas Demo',
         author: 'Felipe Carlos and Paola de Salvo',
         organization: 'GEO Secretariat',
         time: '12:30 - 13:00 (during lunch break)',
@@ -394,10 +403,10 @@ export const BoothSchedule = {
       },
       {
         topic: 'Activities',
-        title: 'Global Ecosystem Atlas Demo',
-        author: 'David Patterson',
+        title: 'Learn to become a GEO Knowledge Hub provider',
+        author: 'Felipe Carlos and Paola de Salvo',
         organization: 'GEO Secretariat',
-        time: '14.30 - 15.00',
+        time: '13:00 - 13:30 (during lunch break)',
         type: 'Presentation',
       },
       {
@@ -421,6 +430,15 @@ export const BoothSchedule = {
         author: 'Igor Milosavljevic',
         organization: 'Open Earth Monitor Cyberinfrastructure project',
         time: '15:30 - 16:00 (during coffee break)',
+        type: 'Presentation',
+      },
+      {
+        topic: 'Activities',
+        title:
+          'GEO Knowledge Hub and the GEO-LDN country approach on the examples of Colombia and  Ghana',
+        author: 'Ingrid Teich and Amos Kabo-Bah',
+        organization: 'GEO-LDN',
+        time: '16:00 - 16:30',
         type: 'Presentation',
       },
       {
@@ -487,7 +505,7 @@ export const BoothSchedule = {
       {
         topic: 'Activities',
         title: 'Service for Drought and Water Depletion',
-        author: 'Katarzyna Dabrowska - Zielinska',
+        author: 'Katarzyna Dabrowska-Zielinska',
         organization: 'Creative Commons',
         time: '11:30 - 12:00',
         type: 'Presentation',
@@ -501,15 +519,24 @@ export const BoothSchedule = {
       },
       {
         topic: 'Activities',
-        title: 'Learn to become a GEO Knowledge Hub provider',
-        author: 'Felipe Carlos and Paola de Salvo',
-        organization: 'GEO Secretariat',
-        time: '13:00 - 13:30 (during lunch time)',
+        title: 'Towards Digital Twins for Environmental Monitoring',
+        author: 'Nataliia Kussul and Andrii Shelestov',
+        organization: '',
+        time: '12:00 - 12:30 (during lunch break)',
         type: 'Presentation',
       },
       {
         topic: 'Activities',
-        title: 'EOTEC DevNet: Building Regional Communities to Advance Earth Observation Capacity Building for Disaster Risk Reduction',
+        title: 'Learn to become a GEO Knowledge Hub provider',
+        author: 'Felipe Carlos and Paola de Salvo',
+        organization: 'GEO Secretariat',
+        time: '13:00 - 13:30 (during lunch break)',
+        type: 'Presentation',
+      },
+      {
+        topic: 'Activities',
+        title:
+          'EOTEC DevNet: Building Regional Communities to Advance Earth Observation Capacity Building for Disaster Risk Reduction',
         author: 'Martyna Stelmaszczuk-Górska',
         organization: 'EOTEC DevNet',
         time: '13:30 - 14:00',
@@ -517,7 +544,7 @@ export const BoothSchedule = {
       },
       {
         topic: 'Activities',
-        title: 'Space for Climate Observatory projects',
+        title: 'Space for Climate Observatory: presentation of the Littoscope project',
         author: 'Frédéric Bretar and Alexia Freigneaux',
         organization: 'SCO',
         time: '14:00 - 14:30',
@@ -598,7 +625,7 @@ export const BoothSchedule = {
         title: 'Data Licensing and Software Licensing',
         author: 'Taylor Campbell and Jan Ainali',
         organization: 'Creative Commons',
-        time: '11:30 - 12:00',
+        time: '11:00 - 11:30',
         type: 'Presentation',
       },
       {
@@ -622,6 +649,15 @@ export const BoothSchedule = {
         author: 'Felipe Carlos and Paola de Salvo',
         organization: 'GEO Secretariat',
         time: '12:30 - 13:00 (during lunch break)',
+        type: 'Presentation',
+      },
+      {
+        topic: 'Activities',
+        title:
+          'libinsitu - What if we transitioned from CSV to NetCDF for large-scale data workflows?',
+        author: 'Lionel Menard',
+        organization: 'MINES Paris PSL',
+        time: '13:00 - 13:30 (during lunch break)',
         type: 'Presentation',
       },
       {
