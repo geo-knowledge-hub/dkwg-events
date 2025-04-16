@@ -9,29 +9,55 @@
 
 import { EventHero, ScheduleSection } from '../components';
 
-import { ODOKSchedule } from '@db/schedule';
+import { BoothSchedule } from '@db/schedule';
 
-export default function ODOKHomePage() {
+export default function BoothPage() {
   return (
     <>
       <EventHero
-        label={'GEO Global Forum - Auditorium'}
-        title={'Open Data and Open Knowledge Workshop 2025'}
+        label={'GEO Global Forum'}
+        title={'GEO Data and Knowledge WG booth'}
         description={
-          'Fueling a community-powered movement across the GEO community. Discover how open data and open knowledge are driving collaboration, innovation, and impact.'
+          'Explore the power of EO-based applications through live demos, expert insights, and hands-on tech.'
         }
-        booth={true}
+        booth={false}
         odok={false}
       />
 
-      <div id="schedule" className="mt-5">
+      <div id="schedule">
         <ScheduleSection
           id={'day-01'}
-          data={ODOKSchedule}
-          title={'Monday, 5 May'}
-          description={
-            'From 14:00 to 18:00 — 4 hours of nonstop innovation, demos, and discussion.'
-          }
+          title={BoothSchedule.Day01.title}
+          description={BoothSchedule.Day01.description}
+          data={BoothSchedule.Day01.activities}
+        />
+
+        <ScheduleSection
+          id={'day-02'}
+          title={BoothSchedule.Day02.title}
+          description={BoothSchedule.Day02.description}
+          data={BoothSchedule.Day02.activities}
+        />
+
+        <ScheduleSection
+          id={'day-03'}
+          title={BoothSchedule.Day03.title}
+          description={BoothSchedule.Day03.description}
+          data={BoothSchedule.Day03.activities}
+        />
+
+        <ScheduleSection
+          id={'day-04'}
+          title={BoothSchedule.Day04.title}
+          description={BoothSchedule.Day04.description}
+          data={BoothSchedule.Day04.activities}
+        />
+
+        <ScheduleSection
+          id={'day-05'}
+          title={BoothSchedule.Day05.title}
+          description={BoothSchedule.Day05.description}
+          data={BoothSchedule.Day05.activities}
         />
       </div>
     </>

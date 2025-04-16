@@ -39,10 +39,7 @@ const RootLayout: React.FC<LayoutProps> = ({ children }: LayoutProps): JSX.Eleme
         <Header
           logoSrc={logoDKWG}
           logoAlt={'GEO Data and Knowledge Working Group logo'}
-          navItems={[
-            { label: 'ODOK', href: '/' },
-            { label: 'Booth', href: '/booth' },
-          ]}
+          navItems={[{ label: 'Booth', href: '/' }]}
         />
 
         {/* Main Content */}
