@@ -34,6 +34,9 @@ interface LayoutProps {
 const RootLayout: React.FC<LayoutProps> = ({ children }: LayoutProps): JSX.Element => {
   return (
     <html lang="en" className="scroll-smooth">
+      <head>
+        <link rel="icon" href="/images/logo-dkwg.ico" sizes="any" />
+      </head>
       <body className="flex min-h-screen flex-col bg-gray-50 font-sans antialiased">
         {/* Header */}
         <Header
