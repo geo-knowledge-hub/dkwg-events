@@ -58,25 +58,19 @@ export const EventHero: React.FC<EventHeroProps> = ({
 
         {/* CTA Button - Schedule (Fixed) */}
         <div className="flex flex-wrap justify-center gap-2">
-          <Link
-            href="#schedule"
-            className="inline-flex items-center rounded-lg bg-[#459299] px-5 py-2.5 font-medium text-white shadow transition hover:bg-[#36777c] focus:ring-2 focus:ring-[#459299] focus:ring-offset-2 focus:outline-none"
-          >
-            Schedule
-          </Link>
-
           {booth && (
             <Link
-              href="/booth"
+              href="/"
               className="inline-flex items-center rounded-lg bg-[#459299] px-5 py-2.5 font-medium text-white shadow transition hover:bg-[#36777c] focus:ring-2 focus:ring-[#459299] focus:ring-offset-2 focus:outline-none"
             >
-              Explore the booth
+              Full schedule
             </Link>
           )}
 
           {odok && (
             <Link
-              href="/"
+              href="https://earthobservations.org/about-us/events/geo-global-forum-2025/schedule/odok"
+              target={'_blank'}
               className="inline-flex items-center rounded-lg bg-[#459299] px-5 py-2.5 font-medium text-white shadow transition hover:bg-[#36777c] focus:ring-2 focus:ring-[#459299] focus:ring-offset-2 focus:outline-none"
             >
               Explore ODOK

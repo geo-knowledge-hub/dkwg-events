@@ -9,234 +9,103 @@
 
 import logoDKWG from '@public/images/logo-dkwg.svg';
 
-export const ODOKSchedule = [
-  {
-    topic: 'ODOK and Youth',
-    title: 'Introduction',
-    author: 'Kalamkas Yessimkhanova and Sam Amos',
-    organization: 'GEO Secretariat',
-    time: '14:00 - 14:05',
-    type: 'Presentation',
-  },
-  {
-    topic: 'ODOK and Youth',
-    title: 'Ideathon EC - ESA',
-    author: 'TBC',
-    organization: 'TBC',
-    time: '14:05 - 14:12',
-    type: 'Presentation',
-  },
-  {
-    topic: 'ODOK and Youth',
-    title: 'EarthMonitor: summer schools and workshops',
-    author: 'Tom Hengl',
-    organization: 'Open Geo Hub',
-    time: '14:12 - 14:19',
-    type: 'Presentation',
-  },
-  {
-    topic: 'ODOK and Youth',
-    title:
-      'Capacity building on the construction and applications for global UAV observation network',
-    author: 'Yue Huan',
-    organization: 'REIS',
-    time: '14:19 - 14:26',
-    type: 'Presentation',
-  },
-  {
-    topic: 'ODOK and Youth',
-    title: 'Testimonial from GEOVersity students on usage of Drones',
-    author: 'Lamine Ndiaye ',
-    organization: 'HOT-OSM',
-    time: '14:26 - 14:33',
-    type: 'Presentation',
-  },
-  {
-    topic: 'ODOK and Youth',
-    title: 'Discussion time',
-    author: 'All speakers',
-    organization: 'REIS',
-    time: '14:33 - 14:43',
-    type: 'Round table',
-  },
-  {
-    topic: 'ODOK and National GEOs',
-    title: 'Introduction',
-    author: 'Paola de Salvo',
-    organization: 'GEO Secretariat',
-    time: '14:43 - 14:48',
-    type: 'Presentation',
-  },
-  {
-    topic: 'ODOK and National GEOs',
-    title: 'An example of Countries cooperation in knowledge exchange',
-    author: 'Felipe Carlos',
-    organization: 'GEO Secretariat',
-    time: '14:48 - 14:55',
-    type: 'Presentation',
-  },
-  {
-    topic: 'ODOK and National GEOs',
-    title: 'Ghana example of National GEOs Knowledge Hubs',
-    author: 'Amos Kabobah',
-    organization: 'UENR',
-    time: '14:55 - 15:02',
-    type: 'Presentation',
-  },
-  {
-    topic: 'ODOK and National GEOs',
-    title: ' South Africa example of National GEOs Knowledge Hubs',
-    author: 'Lulu Makapela',
-    organization: 'CSIR',
-    time: '15:02 - 15:09',
-    type: 'Presentation',
-  },
-  {
-    topic: 'ODOK and National GEOs',
-    title:
-      'Energizing EO Capacity Building on Flood and Drought Management: a Community Consultation on the Nexus between SDGs 11 and 17',
-    author: 'Lawrence Friedl',
-    organization: 'NASA',
-    time: '15:16 - 15:23',
-    type: 'Presentation',
-  },
-  {
-    topic: 'ODOK and National GEOs',
-    title: 'Discussion time',
-    author: 'All speakers',
-    time: '15:23 - 15:33',
-    type: 'Round table',
-  },
-  {
-    topic: 'In situ data in GEO',
-    title: 'The GEO In situ data strategy',
-    author: 'Helen Glaves',
-    organization: 'BGS',
-    time: '15:33 - 15:40',
-    type: 'Presentation',
-  },
-  {
-    topic: 'In situ data in GEO',
-    title: 'Bringing a decentralized approach to trust in GEO data from data spaces',
-    author: 'Joan Maso',
-    organization: 'University of Barcelona',
-    time: '15:40 - 15:47',
-    type: 'Presentation',
-  },
-  {
-    topic: 'In situ data in GEO',
-    title:
-      'An overview of the in-situ data requirements collected among the GEO Work Programme activities. Can providers respond to the user demands?',
-    author: 'Alba Brobia',
-    organization: 'CREAF',
-    time: '15:47 - 15:54',
-    type: 'Presentation',
-  },
-  {
-    topic: 'In situ data in GEO',
-    title: 'The importance of In-Situ data and how to close existing data gaps',
-    author: 'Steffen Fritz',
-    organization: 'IIASA',
-    time: '15:43 - 16:01',
-    type: 'Presentation',
-  },
-  {
-    topic: 'In situ data in GEO',
-    title: 'GCOS & In situ Global Climate Data center',
-    author: 'Antonio Bombelli',
-    organization: 'WMO',
-    time: '16:01 - 16:08',
-    type: 'Presentation',
-  },
-  {
-    topic: 'In situ data in GEO',
-    title: 'Discussion time',
-    author: 'All speakers',
-    time: '16:08 - 16:18',
-    type: 'Round table',
-  },
-  {
-    topic: 'ODOK and new GWP activities',
-    title: 'Introduction',
-    author: 'Bente Lilja Bye',
-    organization: 'BLB',
-    time: '16:18 - 16:23',
-    type: 'Presentation',
-  },
-  {
-    topic: 'ODOK and new GWP activities',
-    title: 'GEO Knowledge Hub the centralized digital library for EO knowledge',
-    author: 'GEO Knowledge Hub Team',
-    organization: 'GEO Data and Knowledge Working Group',
-    time: '16:23 - 16:30',
-    type: 'Presentation',
-  },
-  {
-    topic: 'ODOK and new GWP activities',
-    title: 'Self Assessment/Libinsitu',
-    author: 'Lionel Menard',
-    organization: 'MinesParis',
-    time: '16:30 - 16:37',
-    type: 'Presentation',
-  },
-  {
-    topic: 'ODOK and new GWP activities',
-    title: 'G-REQS: Geospatial in-situ Requirements',
-    author: 'Joan Maso',
-    organization: 'University of Geneva',
-    time: '16:37 - 16:44',
-    type: 'Presentation',
-  },
-  {
-    topic: 'ODOK and new GWP activities',
-    title: 'The GEO data sharing and data management principles & open knowledge',
-    author: 'Bente Lilja Bye',
-    organization: 'BLB',
-    time: '16:44 - 16:51',
-    type: 'Presentation',
-  },
-  {
-    topic: 'ODOK and new GWP activities',
-    title: 'Data and Software license guidance',
-    author: 'Taylor Campbell and Jan Ainali',
-    organization: 'Creative Commons',
-    time: '16:51 - 16:58',
-    type: 'Presentation',
-  },
-  {
-    topic: 'ODOK and new GWP activities',
-    title: 'UNCCD implementation demo',
-    author: 'Taylor Campbell and Jan Ainali',
-    organization: 'Creative Commons',
-    time: '16:58 - 17:05',
-    type: 'Presentation',
-  },
-  {
-    topic: 'ODOK and new GWP activities',
-    title: 'AI and ML in the Americas ',
-    author: 'Arif Rustem',
-    organization: 'UMBC',
-    time: '17:05 - 17:12',
-    type: 'Presentation',
-  },
-  {
-    topic: 'ODOK and new GWP activities',
-    title: 'Discussion time',
-    author: 'All speakers',
-    time: '17:12 - 17:22',
-    type: 'Round table',
-  },
-  {
-    topic: 'Closing',
-    title: 'Final remarks and next steps',
-    author: 'All speakers',
-    time: '17:22 - 17:30',
-    type: 'Presentation',
-  },
-];
+/**
+ * Represents a single activity or event in the booth schedule.
+ */
+export interface BoothActivity {
+  /**
+   * Group or category of the activity (e.g., ``Activities``).
+   */
+  topic: string;
 
-export const BoothSchedule = {
-  Day01: {
+  /**
+   * Title of the activity.
+   */
+  title: string;
+
+  /**
+   * Time range for the activity (e.g., ``10:30 - 11:00``).
+   */
+  time: string;
+
+  /**
+   * Type of session (e.g., ``Interactive demo``, ``Presentation``, ``Coffee break``).
+   */
+  type: string;
+
+  /**
+   * Author(s) presenting or involved in the activity (optional).
+   */
+  author?: string;
+
+  /**
+   * Organization the author(s) belong to (optional).
+   */
+  organization?: string;
+
+  /**
+   * Sponsor of the activity (optional).
+   */
+  sponsor?: string;
+
+  /**
+   * Description of the activity (used for special events or workshops).
+   */
+  description?: string;
+
+  /**
+   * Whether this activity includes a call-to-action (CTA) section (optional).
+   */
+  cta?: boolean;
+
+  /**
+   * URL for the call-to-action link (optional).
+   */
+  ctaLink?: string;
+
+  /**
+   * Text tagline shown for the CTA (optional).
+   */
+  ctaTagline?: string;
+
+  /**
+   * Logo used in the CTA (e.g., ``imported image`` or ``URL string``).
+   */
+  ctaLogo?: string;
+}
+
+/**
+ * Full schedule for a specific day.
+ */
+export interface BoothDay {
+  /**
+   * Human-readable title for the day (e.g., ``Monday, 5 May``).
+   */
+  title: string;
+
+  /**
+   * A short description of the day's focus or theme.
+   */
+  description: string;
+
+  /**
+   * A list of scheduled activities for the day.
+   */
+  activities: BoothActivity[];
+}
+
+/**
+ * Map each day key (e.g., ``day-01``) to its respective schedule.
+ */
+export interface BoothScheduleType {
+  [dayKey: string]: BoothDay;
+}
+
+/**
+ * Booth schedule data.
+ */
+export const BoothSchedule: BoothScheduleType = {
+  'day-01': {
     title: 'Monday, 5 May',
     description: 'Focusing on Agriculture and Food Security and Water and Land Sustainability',
     activities: [
@@ -311,16 +180,16 @@ export const BoothSchedule = {
           'Discover, collaborate, and innovate! Join the ODOK Workshop hosted by the GEO Data and Knowledge Working Group to explore, learn, and share EO-based solutions',
         time: '14:00 - 17:30',
         cta: true,
-        ctaLink: '/',
+        ctaLink: 'https://earthobservations.org/events/session/odok',
         ctaTagline: 'Learn. Share. Build.',
         ctaLogo: logoDKWG,
         type: 'Special Event',
       },
     ],
   },
-  Day02: {
+  'day-02': {
     title: 'Tuesday, 6 May',
-    description: 'Focusing on Ecosystem Biodiversity and Carbon Management',
+    description: 'Focusing on Ecosystems, Biodiversity and Carbon Management',
     activities: [
       {
         topic: 'Activities',
@@ -451,9 +320,9 @@ export const BoothSchedule = {
       },
     ],
   },
-  Day03: {
+  'day-03': {
     title: 'Wednesday, 7 May',
-    description: 'Focusing on Weather Hazard and Disaster Resilience',
+    description: 'Focusing on Weather, Hazard and Disaster Resilience',
     activities: [
       {
         topic: 'Activities',
@@ -576,7 +445,7 @@ export const BoothSchedule = {
       },
     ],
   },
-  Day04: {
+  'day-04': {
     title: 'Thursday, 8 May',
     description: 'Focusing on Climate, Energy and Urbanization and One Health',
     activities: [
@@ -686,7 +555,7 @@ export const BoothSchedule = {
       },
     ],
   },
-  Day05: {
+  'day-05': {
     title: 'Friday, 9 May',
     description: 'Focusing on Youth',
     activities: [

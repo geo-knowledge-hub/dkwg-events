@@ -62,7 +62,7 @@ export const ScheduleSection: React.FC<ScheduleProps> = ({
   }, {});
 
   return (
-    <section id={id} className="px-4 pt-25">
+    <section id={id} className="px-4 pt-10">
       <div className="mx-auto max-w-4xl">
         {/* Heading */}
         <h2 className="mb-4 text-center text-3xl font-bold">{title}</h2>
@@ -128,6 +128,7 @@ export const ScheduleSection: React.FC<ScheduleProps> = ({
                             {item.ctaLink && (
                               <a
                                 href={item.ctaLink}
+                                target={'_blank'}
                                 className="inline-block rounded-full bg-[#459299] px-4 py-2 text-sm font-semibold text-white shadow transition hover:bg-[#36777c] focus:ring-2 focus:ring-[#459299]/50 focus:outline-none"
                               >
                                 View

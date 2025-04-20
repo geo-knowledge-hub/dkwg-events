@@ -39,7 +39,14 @@ const RootLayout: React.FC<LayoutProps> = ({ children }: LayoutProps): JSX.Eleme
         <Header
           logoSrc={logoDKWG}
           logoAlt={'GEO Data and Knowledge Working Group logo'}
-          navItems={[{ label: 'Booth', href: '/' }]}
+          navItems={[
+            { label: 'Booth', href: '/' },
+            {
+              label: 'ODOK',
+              href: 'https://earthobservations.org/about-us/events/geo-global-forum-2025/schedule/odok',
+              external: true,
+            },
+          ]}
         />
 
         {/* Main Content */}

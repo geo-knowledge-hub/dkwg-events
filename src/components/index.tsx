@@ -11,4 +11,5 @@ export { Header } from './header';
 export { Footer } from './footer';
 
 export { EventHero } from './hero';
+export { GEOFocusAreaCard } from './card';
 export { ScheduleSection } from './schedule';
