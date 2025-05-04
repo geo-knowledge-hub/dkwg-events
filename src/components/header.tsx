@@ -52,10 +52,6 @@ export const Header: React.FC<HeaderProps> = ({
   const pathname = usePathname();
   const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
 
-  const handleNotifyClick = () => {
-    // ToDo: Subscription
-  };
-
   return (
     <header className="fixed inset-x-0 top-0 z-50 border-b border-gray-200 bg-white/70 backdrop-blur-md">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
