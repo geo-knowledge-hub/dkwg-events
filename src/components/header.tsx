@@ -81,13 +81,6 @@ export const Header: React.FC<HeaderProps> = ({
                 </span>
               </Link>
             ))}
-
-            <button
-              onClick={handleNotifyClick}
-              className="cursor-pointer rounded-full bg-[#459299] px-5 py-2.5 text-sm font-semibold text-white shadow transition hover:bg-[#36777c] focus:ring-2 focus:ring-[#459299]/50 focus:outline-none"
-            >
-              Get notifications
-            </button>
           </nav>
 
           {/* Mobile Hamburger */}
@@ -133,13 +126,6 @@ export const Header: React.FC<HeaderProps> = ({
                 </span>
               </Link>
             ))}
-
-            <button
-              onClick={handleNotifyClick}
-              className="block w-full cursor-pointer rounded-lg bg-[#459299] px-4 py-2.5 text-left text-sm font-semibold text-white shadow transition hover:bg-[#36777c]"
-            >
-              Get notifications
-            </button>
           </div>
         )}
       </div>
