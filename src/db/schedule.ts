@@ -135,7 +135,7 @@ export const BoothSchedule: BoothScheduleType = {
       {
         topic: 'Activities',
         title: 'Field boundary delineation',
-        author: 'Mykola Lavreniuk and Andrii Shelestov',
+        author: 'Nataliia Kussul and Andrii Shelestov',
         organization: '',
         time: '11:00 - 11:30',
         type: 'Interactive demo',
@@ -143,7 +143,7 @@ export const BoothSchedule: BoothScheduleType = {
       {
         topic: 'Activities',
         title: 'Harmonized agronomy in-situ data for crop mapping',
-        author: 'Eliana Li Santi',
+        author: 'Manuela Marabucci',
         organization: 'SERCO',
         time: '11:30 - 12:00',
         type: 'Interactive demo',
@@ -273,7 +273,7 @@ export const BoothSchedule: BoothScheduleType = {
       {
         topic: 'Activities',
         title: 'Global Ecosystem Atlas Demo',
-        author: 'GEO Global Ecosystem Atlas',
+        author: 'David Patterson',
         organization: 'GEO Secretariat',
         time: '12:30 - 13:00 (during lunch break)',
         type: 'Presentation',
